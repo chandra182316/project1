@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- The below lines are about wedsite interface. -->
+    <div id="section1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#" onclick="display('section1')">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#" onclick="display('section4')">Menu</a>
+                    <a class="nav-link" href="#" onclick="display('section6')">History</a>
+                    <a class="nav-link" href="#" onclick="display('section2')">Games</a>
+                </div>
+            </div>
+        </nav>
+        <div class=" cs d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <h1 class="head mb-3">Get Delicious Food Anytime</h1>
+                <p class="slogan">Eat Healthy & Smart</p>
+                <button class="b1" onclick="display('section4')">View Menu</button>
+                <button class="b2" onclick="display('section5')">Order Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The above lines are about wedsite interface. -->
+    <!-- The below lines are about game section. -->
+
+    <div id="section2">
+        <div class="container-fluid bg-container">
+            <div class="row bg-white">
+                <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+                    <img class="guess-game-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" />
+                    <p class="text-center game-description">
+                        Find out the right number between 1 to 100
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 guess-bg-container text-center">
+                    <h1 class="guess-heading">
+                        Guess The Number
+                        <img class="guess-number-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" />
+                    </h1>
+                    <input type="text" class="user-input" id="userInput" />
+                    <div>
+                        <button class="btn btn-info check-guess" onclick="checkGuess()">
+                            Check
+                        </button>
+                    </div>
+                    <p class="game-result" id="gameResult"></p>
+                    <button class="btn btn-info mr-2" onclick="display('section1')">Back</button>
+                    <button onclick="display('section3')" class="btn btn-success ml-2">How to play</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="about" id=section3>
+        <p>Computer think a random number.You have guss it by entering in white blank and then have to click on check button.
+            If your the matches then it shows Congratulations! You got it right.If you entered number is less than computers number then it shows Too Low! Try Again
+            if your number is higher than computer's number then it shows 'Too High! Try Again'.If you enter invalid stuff then it showsPlease provide a valid input
+        </p>
+        <button onclick="display('section2')" class="btn btn-success ">Back</button>
+    </div>
+    <!-- The above lines are about game section. -->
+    <!-- The below lines are about view menu. -->
+    <div id="section4" class="bg">
+        <button class="btn btn-danger mt-4 ml-3 mb-2 " onclick="display('section1')">back</button>
+
+        <h1 class="menuhead ml-3">Menu Item</h1>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201511/oat-story%2Bfb_647_110415010610.jpg?VersionId=NCvlpCKhDUS2zFI53oyvOcHFLCwmOIm7&size=690:388" class="ima mb-3" />
+                        <h5>Oat Meal</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://vaya.in/recipes/wp-content/uploads/2019/12/Ragi-Malt.jpg" class="ima mb-3" />
+                        <h5>Raghi Malt</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://www.eatingwell.com/thmb/DcRcZjqrlsddimRWL6ubFUGB26c=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3749561-d6c6f08e39664e94ac339615fffc53e2.jpg" class="ima mb-3" />
+                        <h5>Collords</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/220318073138-01-potato-wellness.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" class="ima mb-3" />
+                        <h5>Potato Buzz</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/220719164934-01-inexpensive-food-healthy-stock.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" class="ima mb-3" />
+                        <h5>Crispy Buzz</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://www.endurancemag.com/wp-content/uploads/2017/01/115808902.jpg" class="ima mb-3" />
+                        <h5>Fiber Rolls</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/8/25/0/GT0104_Grilled-Corn-Salad.jpg.rend.hgtvcom.616.462.suffix/1382538719973.jpeg" class="ima mb-3" />
+                        <h5>Sprouts Nuts</h5>
+                    </div>
+                </div>
+                <div class="column-12 col-md-2 col-lg-3">
+                    <div class="itemcard">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/11/25/0/FNK_pan-seared-salmon-with-kale-apple-salad_s4x3.jpg.rend.hgtvcom.791.594.suffix/1387918756116.jpeg" class="ima mb-3" />
+                        <h5>Apple Salad</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--The above section is about view menu-->
+    <!-- The below section is about order section-->
+    <div id="section5" class="arrange">
+        <div>
+            <h5 class="mb-2">Enter Menu Item Here</h5>
+            <input type="text" class="searchbar mb-4" />
+            <br />
+            <button class="btn btn-light searchbutton mb-3 ">Search</button>
+            <br />
+            <button class="btn btn-dark mb-2" onclick="display('section1')">Back</button>
+        </div>
+        <img src="https://images.pexels.com/photos/8939255/pexels-photo-8939255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="orderimage" />
+    </div>
+    <!-- The below code about history section-->
+    <div id=section6 class="historybg ">
+        <div class="d-flex flex-column justify-content-end">
+
+            <div class="aboutorder">
+                <h1 class="mr-4 mb-3 historyhead">You haven't placed any order yet</h1>
+                <button class="btn btn-success mr-10 mb-3" onclick="display('section5')">Order Now</button>
+                <br />
+                <button class="btn btn-info mr-10" onclick="display('section1')">Back</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
